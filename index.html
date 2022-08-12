@@ -5,31 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./index.css" >
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main> 
+    <div class="image-container">
+      <img src="./images/bg-pattern-card.svg" alt="pattern" height="100px" >
+    </div>
+    <div class="profile">
+      <ul class="flex-col">
+        <li>
+          <img id="img-victor" src="./images/image-victor.jpg" alt="Profile picture" width="80px" >
+        </li>
+        <li>
+          <span class="name large-text">Victor Crest</span> <span class="age">26</span> 
+        </li>
+        <li class="city">
+          London
+        </li>
+      </ul>
+    </div>
+    <div class="stats">
+      <ul class="stats-list">
+        <li>
+          <ul class="flex-col">
+            <li class="large-text">
+              80K
+            </li>
+            <li class="stat-head">
+              Followers
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="flex-col">
+            <li class="large-text">
+              803K
+            </li>
+            <li class="stat-head">
+              Likes
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="flex-col">
+            <li class="large-text">
+              1.4K
+            </li>
+            <li class="stat-head">
+              Photos
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abdul rehman</a>.
+    </div>
+  </footer>
 </body>
 </html>
